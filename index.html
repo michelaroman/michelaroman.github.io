@@ -14,12 +14,12 @@
   <div class="container">
     <div class="nav-wrapper">
       <div class="left-side">
-        <div class="nav-link-wrapper">
-          <a href="home.html">Home</a>
-        </div>
 
         <div class="nav-link-wrapper active-nav-link">
-          <a href="index.html">Sculpture</a>
+          <a href="index.html">Home</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="sculpture.html">Sculpture</a>
         </div>
 
         <div class="nav-link-wrapper">
@@ -50,143 +50,13 @@
       </div>
     </div>
 
-   
-      <div class="portfolio-items-wrapper">
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/brynne.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="subtitle">Portrait of Brynne</div>
-          </div>
-        </div>
-        <div class="portfolio-item-wrapper">
-          <div class="description">
-              <p><b>Medium</b>: Hydrocal with Acrylic Patina<br>
-              <b>Dimentions</b>: 3/4 Life size - 18” x 12” x 7.5”<br>
-              </p>
-          </div>
-        </div>
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/brynne2.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="subtitle">Portrait of Brynne</div>
-          </div>
-        </div>
-        <div class="portfolio-item-wrapper">
-          <div class="description">
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/unraveled.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="subtitle">Unraveled</div>
-          </div>
-        </div>
-        <div class="portfolio-item-wrapper">
-          <div class="description">
-              <p><b>Medium</b>: Hydrocal<br> 
-              <b>Dimensions</b>: 6’ x 5.5” x 3.5”<br>
-            </p>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/unraveled2.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="subtitle">Unraveled</div>
-          </div>
-        </div>
-        <div class="portfolio-item-wrapper">
-          <div class="description">
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/unraveled3.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="subtitle">Unraveled</div>
-          </div>
-        </div>
-        <div class="portfolio-item-wrapper">
-          <div class="description">
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/male_study.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="subtitle">Male Study</div>
-          </div>
-        </div>
-        <div class="portfolio-item-wrapper">
-          <div class="description">
-              <p><b>Medium</b>: Hydrocal<br>
-              <b>Dimentions</b>: 9.5” x 4” x 7”<br></p>
-          </div>
+      <div class="home-wrapper">  
+        <div class="home-img" style="background-image:url(images/unspoken_voices.jpg)"></div>
       </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/enclose.png)"></div>
-          <div class="img-text-wrapper">
-            <div class="subtitle">Enclose</div>
-          </div>
-        </div>
-        <div class="portfolio-item-wrapper">
-          <div class="description">
-            <p><b>Medium</b>: Hydrocal<br>
-            <b>Measurements</b>: 3/4 life size<br>
-            </p>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/enclose2.png)"></div>
-          <div class="img-text-wrapper">
-            <div class="subtitle">Enclose</div>
-          </div>
-        </div>
-        <div class="portfolio-item-wrapper">
-          <div class="description">
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/silenced.png)"></div>
-          <div class="img-text-wrapper">
-            <div class="subtitle">Silenced</div>
-          </div>
-        </div>
-        <div class="portfolio-item-wrapper">
-          <div class="description">
-            <p><b>Relief</b><br>
-              <b>Medium</b>: Clay<br>
-            <b>Measurements</b>: 6” x 4.5” x 3”<br>
-          </p>
-          </div>
-        </div>
-
 
     </div>
   </div>
 
 </body>
-
-<script>
-  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
-
-  portfolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('mouseover', () => {
-      console.log(portfolioItem.childNodes[1].classList)
-      portfolioItem.childNodes[1].classList.add('image-blur');
-    });
-
-    portfolioItem.addEventListener('mouseout', () => {
-      console.log(portfolioItem.childNodes[1].classList)
-      portfolioItem.childNodes[1].classList.remove('image-blur');
-    });
-  });
-
-</script>
 
 </html>
