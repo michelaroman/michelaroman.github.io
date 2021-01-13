@@ -105,6 +105,16 @@ a {
   padding: 20px;
 }
 
+.sculpture-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+  width: 88%;
+  padding: 20px;
+}
+
+
 .img-text-wrapper {
   position: absolute;
   top: 0;
