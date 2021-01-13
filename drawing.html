@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michela Roman</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logos/drawing.svg">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="sculpture.html">Sculpture</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="relief.html">Relief</a>
+        </div>
+
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="drawing.html">Drawing</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="unspokenVoices.html">Unspoken Voices</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="collections.html">Collections</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div style="font-weight: bold; font-size: 22px;">
+          <a class= "brand" href="home.html">MICHELA ROMAN </a>
+        </div>
+      </div>
+    </div>
+
+   
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/female_figure_study_1.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Female Figure Study 1</div>
+          </div>
+        </div>
+        <div class="portfolio-item-wrapper">
+          <div class="description">
+              <p><b>Medium</b>: graphite pencil<br>
+              <b>Dimensions</b>: 18x24<br>
+              </p>
+          </div>
+        </div>
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/male_figure_study_1.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Male Figure Study</div>
+          </div>
+        </div>
+        <div class="portfolio-item-wrapper">
+          <div class="description">
+              <p><b>Medium</b>: graphite pencil<br>
+              <b>Dimensions</b>: 18x24<br>
+              </p>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/female_figure_study_2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Female Figure Study 2</div>
+          </div>
+        </div>
+        <div class="portfolio-item-wrapper">
+          <div class="description">
+              <p><b>Medium</b>: graphite pencil<br>
+              <b>Dimensions</b>: 18x24<br>
+              </p>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
